@@ -19,8 +19,8 @@ class MateriaSerializer(serializers.Serializer):
     nombre_materia = serializers.CharField(required=True)
     seccion = serializers.CharField(required=True)
     dias = serializers.CharField(required=True)
-    horai = serializers.TimeField(required=True)
-    horaf = serializers.TimeField(required=True)
+    horai = serializers.CharField(required=True)
+    horaf = serializers.CharField(required=True)
     salon = serializers.CharField(required=True)
     carrera = serializers.CharField(required=True)
     

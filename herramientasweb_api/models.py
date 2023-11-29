@@ -31,8 +31,8 @@ class Materias(models.Model):
     nombre_materia = models.CharField(max_length=255,null=True, blank=True)
     seccion = models.CharField(max_length=255,null=True, blank=True)
     dias = models.CharField(max_length=255,null=True, blank=True)
-    horai = models.TimeField(max_length=255,null=True, blank=True)
-    horaf= models.TimeField(auto_now_add=False,null=True, blank=True)
+    horai = models.CharField(max_length=255,null=True, blank=True)
+    horaf= models.CharField(max_length=255,null=True, blank=True)
     salon = models.CharField(max_length=255, null=True, blank=True)#SIEMPRE ANADIR MAX LENGHT A LOS CHAR FIELD
     carrera = models.CharField(max_length=255,null=True, blank=True)
     creation = models.DateTimeField(auto_now_add=True, null=True, blank=True)
